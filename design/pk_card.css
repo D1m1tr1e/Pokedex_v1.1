@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+.bg_glass {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background: rgba(99, 99, 99, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#card_container {
+    position: relative;
+    background-color: white;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2.5rem;
+    box-shadow: rgb(45 44 44 / 82%) 0px 2px 4px;
+    margin: 0.5rem;
+}
+
+.pk_card_det_design {
+    min-height: 40vh;
+    min-height: 40dvh;
+    color: white;
+    border-radius: 2.5rem;
+}
+
+.pk_head_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.pk_info_container {
+    position: relative;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    margin-top: -5rem;
+    background-color: white;
+    min-height: 5rem;
+}
+
+.pk_type_container {
+    display: flex;
+    margin: 0rem 0rem 2rem 1rem;
+}
+
+.pk_type_dets_view {
+    background-color: rgb(238, 236, 236, 0.2);
+    border: 1px solid rgb(238, 236, 236, 0.2);
+    border-radius: 1rem;
+    padding: 0.2rem 1.3rem 0.2rem 1.3rem;
+    height: 1.2rem;
+    margin-right: 0.2rem;
+}
+
+#pk_img {
+    position: absolute;
+    left: 50%;
+    margin-left: -5rem;
+    margin-top: -9rem;
+    height: 12rem;
+}
+
+.bg_ball_dp {
+    position: absolute;
+    top: 7.5rem;
+    transform: rotate(35deg);
+    opacity: 0.4;
+    right: 1rem;
+    height: 25rem;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+    z-index: 1;
+    background: white;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    border-bottom: 1px solid transparent;
+}
+
+.nav_bar a:hover {
+    transition: 125ms ease-in-out;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.href_border {
+    border-bottom: 1px solid black !important;
+}
+
+.about_info {
+    height: 9rem;
+    background: white;
+    z-index: 2;
+    margin: 0rem 1rem 1rem;
+}
+
+.chart_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 1rem 1rem;
+    height: 10rem;
+    background: white;
+}
+
+#pk_stats {
+    height: 150px !important;
+}
+
+.moves_bib {
+    background: white;
+    margin: 0rem 1rem 1rem;
+    height: 10rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.d-none {
+    display: none;
+}
+
+.close_btn {
+    position: absolute;
+    top: 1.9rem;
+    right: 1.5rem;
+    cursor: pointer;
+    transition: 125ms ease-in-out;
+    color: rgb(129, 128, 128);
+}
+
+.close_btn:hover {
+    transition: 125ms ease-in-out;
+    color: rgb(57, 57, 57);
+}
+
+.cont_direktion {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 1rem;
+}
+
+@media (max-width: 455px) {
+    .bg_ball_dp {
+        position: absolute;
+        top: 7.5rem;
+        transform: rotate(35deg);
+        opacity: 0.4;
+        right: 1rem;
+        height: 19rem;
+    }
+
+    .pk_type_dets_view {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.3rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .chart_box {
+        width: 15rem !important;
+    }
+
+    #pk_img {
+        margin-top: -5rem;
+        height: 9rem;
+    }
+
+    .bg_ball_dp {
+        top: 3.5rem;
+        right: 1rem;
+        height: 10rem;
+    }
+
+    .pk_head_info h1 {
+        font-size: 1.3rem;
+    }
+
+    .pk_type_dets_view {
+        padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+        align-items: center;
+    }
+
+    span {
+        font-size: 0.9rem;
+    }
+}
